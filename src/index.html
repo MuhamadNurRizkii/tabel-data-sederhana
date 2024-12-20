@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table sederhana</title>
+    <!-- tailwindcss -->
+    <link href="/css/output.css" rel="stylesheet" />
+    <!-- <style>
+      * {
+        border: 1px solid red;
+      }
+    </style> -->
+  </head>
+  <body class="bg-slate-400">
+    <section class="container w-full px-4 py-5 lg:w-4/5 lg:mx-auto">
+      <form id="form-input" class="w-full">
+        <div class="input-name flex flex-col">
+          <label for="name" class="text-xl my-2">Nama:</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Masukkan Nama"
+            class="px-2 py-4 text-lg border border-slate-700 rounded-md shadow-md focus:outline-blue-500"
+          />
+        </div>
+        <div class="input-jurusan flex flex-col">
+          <label for="jurusan" class="text-xl my-2">Jurusan:</label>
+          <input
+            type="text"
+            id="jurusan"
+            placeholder="Jurusan"
+            class="px-2 py-4 text-lg border border-slate-700 rounded-md shadow-md focus:outline-blue-500"
+          />
+        </div>
+        <div class="input-nim flex flex-col">
+          <label for="nim" class="text-xl my-2">NIM:</label>
+          <input
+            type="text"
+            id="nim"
+            placeholder="Nim"
+            class="px-2 py-4 text-lg border border-slate-700 rounded-md shadow-md focus:outline-blue-500"
+          />
+        </div>
+      </form>
+      <div class="button w-full mt-5 text-center">
+        <button
+          type="submit"
+          class="text-lg font-bold text-slate-200 px-6 py-3 bg-blue-600 ring-1 ring-slate-600 rounded-md shadow-md hover:bg-blue-400 active:bg-blue-700"
+          id="button"
+        >
+          Kirim
+        </button>
+      </div>
+    </section>
+
+    <section class="container w-full px-4 py-5 mt-8 lg:w-4/5 lg:mx-auto">
+      <table
+        id="table"
+        class="w-full table-fixed border-collapse border shadow-md border-slate-900 p-3"
+      >
+        <th
+          class="py-4 border text-slate-200 text-lg lg:text-xl border-slate-800 bg-sky-600"
+        >
+          Nama
+        </th>
+        <th
+          class="py-4 border text-slate-200 text-lg lg:text-xl border-slate-800 bg-sky-600"
+        >
+          Jurusan
+        </th>
+        <th
+          class="py-4 border text-slate-200 text-lg lg:text-xl border-slate-800 bg-sky-600"
+        >
+          Nim
+        </th>
+      </table>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
